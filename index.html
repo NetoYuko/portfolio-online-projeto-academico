@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluizio Antônio - Portfólio</title>
+    <!-- Links CSS e Js -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Menu Navegação -->
+    <header class="header">
+        <div class="logo">Yuko<span>Dev</span></div>
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Alternar Tema Escuro/Claro">🌓</button>
+            <button id="menu-toggle" aria-label="Abrir Menu">☰</button>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#sobre" class="nav-link active">Sobre Mim</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Tela Sobre Mim -->
+    <main>
+        <section id="sobre" class="section">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h1>Olá, eu sou <span>Aluizio Antônio</span></h1>
+                    <h2>Desenvolvedor FullStack</h2>
+                    <p>Sou apaixonado por tecnologia e focado na criação de soluções eficientes que resolvem problemas reais do dia a dia. Tenho buscado me especializar cada vez mais no desenvolvimento de sistemas robustos e interfaces modernas.</p>
+                    <h3 class="hobbies-text">Meus Hobbies:</h3>
+                    <div class="hobbies">
+                        <ul>
+                            <li>Programação e tecnologia</li>
+                            <li>Jogos</li>
+                            <li>Carros e viagens</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Imagem perfil -->
+                <div class="sobre-img">
+                    <div class="img-placeholder">
+                        <img src="/img/Aluizio.jpg" alt="Foto de perfil Aluizio Antônio" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Tela formação e cursos -->
+        <section id="formacao" class="section section-formacao bg-alt">
+            <div class="section-title">
+                <h2>Formação e Idiomas</h2>
+            </div>
+            <div class="formacao-content">
+                <div class="card-formacao">
+                    <h3>Educação</h3>
+                    <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas (ADS)</p>
+                    <p><strong>Status:</strong> Formação em Dez/2027</p>
+                </div>
+                <div class="card-formacao">
+                    <h3>Educação</h3>
+                    <p><strong>Desenvolvimento back-end Java - </strong> Alura</p>
+                    <p><strong>Desenvolvimento Front-end React - </strong> Alura</p>
+                    <p><Strong>Lógica de programação e JavaScript</Strong> Curso em vídeo</p>
+                    <p><Strong>Designer Gráfico - </Strong> EBAC</p>
+                </div>
+                <div class="card-formacao">
+                    <h3>Idiomas</h3>
+                    <p><Strong>Português:</Strong> Nativo</p>
+                    <p><Strong>Inglês:</Strong> Intermediário</p>
+                </div>
+            </div>
+        </section>
+<!-- Tela Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="section-title">
+                <h2>Meu Portfólio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <!-- imagem Card -->
+                    <div class="card-img-placeholder">
+                        <img src="/img/sistemaPrecificacao.png" alt="Tela sistema precificação" class="preview-port">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sistema de Precificação</h3>
+                        <p>Aplicação full-stack desenvolvida para automatizar cálculos de custos e margens de lucro. Construída com React, Node.js e PostgreSQL.</p>
+                        <a href="https://sistema-precificacao-front.vercel.app/" class="btn-link" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <!-- imagem Card -->
+                    <div class="card-img-placeholder">
+                        <img src="/img/cofre.png" alt="print com arquitetura de pastas" class="preview-port">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sistema de Cofre - Java</h3>
+                        <p>O objetivo principal é demonstrar o domínio de conceitos fundamentais da arquitetura de software orientada a objetos, criando um sistema modular, escalável e de fácil manutenção.</p>
+                        <a href="https://github.com/NetoYuko/sistema-de-cofre-POO" class="btn-link" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <!-- imagem Card -->
+                    <div class="card-img-placeholder">
+                        <img src="/img/todolist.png" alt="Tela programa todo list" class="preview-port">
+                    </div>
+                    <div class="card-info">
+                        <h3>To-Do-List</h3>
+                        <p>Uma aplicação de lista de tarefas desenvolvida com HTML, CSS e JavaScript, onde é possível adicionar, editar, remover, buscar, filtrar e marcar tarefas como concluídas.</p>
+                        <a href="https://netoyuko.github.io/To-Do-List/" class="btn-link" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Tela formulário de contato -->
+        <section id="contato" class="section bg-alt">
+            <div class="section-title">
+                <h2>Contato</h2>
+                <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
+            </div>
+            <div class="form-container">
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <small class="error-msg"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                        <small class="error-msg"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de susseco no formulário -->
+    <div id="modal-sucesso" class="modal hidden">
+        <div class="modal-content">
+            <h3>Sucesso!</h3>
+            <p>Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.</p>
+            <button id="close-modal" class="btn-submit">Fechar</button>
+        </div>
+    </div>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Aluizio Antônio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
